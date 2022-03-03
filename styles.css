@@ -40,9 +40,9 @@ input:focus {
 button {
     display:block;
     font: inherit;
-    background-color: rgb(32, 5, 63);
+    background-color: rgb(62, 159, 243);
     color:white;
-    border: 1px solid rgb(32,5, 63);
+    border: 1px solid rgb(62, 159, 243);
     padding: .5rem 1.5rem;
     border-radius: 4px;
     cursor: pointer;
@@ -50,8 +50,8 @@ button {
 
 button:hover {
     
-    background-color:rgb(52,14,95);
-    border-color:rgb(52,14,95);
+    background-color:rgb(16, 139, 247);
+    border-color:rgb(43, 151, 247);
 }
 
 .form-control-inline {
@@ -70,4 +70,9 @@ ul {
 
 li {
     list-style: none;
+}
+
+h1 {
+    text-align: center;
+    color:rgb(62, 159, 243);
 }
