@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+<body>
+    <form action="/" method="GET">
+
+        <section>
+            <h2>Your personal details</h2>
+            <ul>
+                <li>
+                    <label for="username">Enter name</label>
+                    <input type="text" name="user-name" id=" username">
+                </li>
+
+                <li>
+                    <label for="useremail">Enter email</label>
+                    <input type="email" name="user-email" id="useremail">
+                </li>
+                <li>
+                    <label for="userpassword">Enter password</label>
+                    <input type="password" name="user-password" id="userpassword">
+                </li>
+
+            </ul>
+
+        </section>
+        
+        <section>
+            <h2>More details</h2>
+
+            <ul>
+                <li>
+                    <label for="userage">Enter your age</label>
+                    <input type="number" step="3" name="user-age" id="userage">
+                </li>
+
+                <li>
+                    <label for="userage">Enter your age</label>
+                    <input type="number" step="3" name="user-age" id="userage">
+                </li>
+
+                <li>
+                    <label for="userbirthdate">Birthdate</label>
+                    <input type="date" name="user-birthdate" id="userbirthdate">
+                </li>
+
+                <li>
+                    <label for="favorite-color">Your favorite color?</label>
+                    <select name="favorite-color" id="favorite-color">
+                        <option value="Blue">My favoritecolor is Blue</option>
+                        <option value="Red">My favorite color is Red</option>
+                        <option value="Black">My favorite color is Black</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="user-message">Your message</label>
+                    <textarea name="text-area" id="user-message" cols="30" rows="04"></textarea>
+                </li>
+            </ul>
+        </section>
+
+            <section>
+                <h2>How should we verify your account?</h2>
+                <!-- 
+                    for the below radio buttons, the <name> attribute is set to the same value(i.e "verify") 
+                    so that the user can only be able to select one item from the list.
+                    -->
+                <ul>
+                    <li class="form-control-inline">
+                        <input type="radio" name="verify" id="verify-text">
+                        <label for="verify-text">Via text message</label>
+                    </li>
+                    <li class="form-control-inline">
+                        <input type="radio" name="verify" id = "verify-phone" value ="phone">
+                        <label for="verify-phone">Via phone call</label>
+                    </li>
+            
+                    <li class="form-control-inline">
+                        <input type="radio" name="verify" id ="verify-email" value="email">
+                        <label for="verify-email">Via email</label>
+                    </li>
+                </ul>
+
+            </section>
+
+
+            <section>
+
+                <h2>Student identity</h2>
+                <!-- 
+                    for the below checkboxes, the <name> attribute is set to the same value(i.e "verify-student") 
+                    so that they can be sent as a package(grouped together when sent to the server) 
+                -->
+                <ul>
+                    <li class="form-control-inline">
+                        <input type="checkbox" name="verify-student" id = verifystudent>
+                        <label for="verifystudent">are you a IU student? </label>
+                    </li>
+                    <li class="form-control-inline">
+                        <input type="checkbox" name="verfy-student" id="verifycourse">
+                        <label for="verifycourse">Are you studying towards a Bsc in Computer Science?</label>
+                    </li>
+
+                </ul>
+
+            </section>
+            <hr>
+            <section>
+                <div class="form-control-inline">
+                    <input type="checkbox" id="terms" name="agree-to-terms" >
+                    <label for="terms">Agree to terms</label>
+                </div>
+            </section>
+
+        <button>Submit</button>
+        
+        
+    </form>
+</body>
+</html>
