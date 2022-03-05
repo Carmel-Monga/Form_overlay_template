@@ -1,0 +1,97 @@
+body {
+    background-color: rgb(223, 243, 245);
+    font: normal 1rem 'Roboto', sans-serif;
+    margin:0;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+form {
+    width: 35rem;
+    box-shadow: 1px 2px 4px rgb(150,150,150, 0.4);
+    background-color: rgb(246, 246, 252);
+    border: 1px solid rgb(246, 246, 252);
+    margin: 1rem auto;
+    border-radius: 6px;
+    padding: 1rem;
+}
+
+label {
+    display:block;
+    padding-bottom: .5rem;
+    color:rgb(6, 24, 41)
+    
+}
+
+input, textarea, select {
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 2px;
+    border: 1px solid grey;
+    font: inherit;
+    margin-bottom: 1rem;
+    padding:0.25rem;
+    
+}
+
+input:focus {
+    background-color:rgba(194, 135, 245, 0.082)
+}
+div {
+    display: flex; 
+}
+
+
+.form-control-inline input {
+   margin-bottom: 0;
+   width:auto;
+}
+
+.form-control-inline label{
+    padding:  0 0 0 0.5rem;
+}
+
+
+div.checkbox{
+    margin-top: 1rem;
+}
+div.checkbox input {
+    width:auto;
+    
+}
+
+.div-button{
+    display: flex;
+    justify-content: flex-end;
+  
+    
+}
+
+button {
+    padding: 0.5rem 1rem;
+    border-radius:3px ;
+    border: 1px solid rgb(150,150,150);
+    margin: 1rem 0.2rem;
+    transition: background-color 240ms ease-in-out;
+}
+
+#submit{
+    color: white;
+    background-color: rgb(15, 10, 77);
+    border-color: rgb(15, 10, 77);
+    
+}
+
+button:hover {
+    background-color:white;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color:rgb(47, 43, 105);
+    
+
+}

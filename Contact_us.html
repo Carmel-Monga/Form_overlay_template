@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="contactus.css">
+</head>
+<body>
+    <h2>Contact Us</h2>
+    <form action="/" get="GET">
+        <h3>How can we help you?</h3>
+
+        <label for="username">Your Name</label>
+        <input type="text" name="user-name" id="username" required>
+
+        <label for="useremail">Your E-Mail Adress</label>
+        <input type="email" name="user-email" id="useremail" required>
+
+        <label for="userphone">Your Phone Number</label>
+        <input type="number" name="user-phone" id="userphone" required>
+
+        <label for="usermessage">Your message</label>
+        <textarea  name="user-message" id="usermessage" required rows="4"> </textarea>
+
+        <label for="How_did_you_find_us" name="hdfu">How did you find us?</label>
+        <select name="user-choice" id="How_did_you_find_us">
+            <option value=""></option>
+            <option value="Web search"> Web Search</option>
+            <option value="Word of mouth"> Word of Mouth</option>
+            <option value="Other"> Other</option>
+        </select>
+
+        <h3>How shoud we reply?</h3>
+        <div class="form-control-inline">
+            <input type="radio" name="reply-to-user" id="verify-user-phone" required>
+            <label for="verify-user-phone">Call me</label>
+        </div>
+
+        <div class="form-control-inline">
+            <input type="radio" name="reply-to-user" id="verify-user-email" required>
+            <label for="verify-user-email">Send me an email</label>
+        </div>
+
+        <div class="form-control-inline">
+            <input type="radio" name="reply-to-user" id="no-reply" required>
+            <label for="no-reply">Don't reply</label>
+        </div>
+
+        <div class="checkbox">
+            <input type="checkbox" name="accept-terms" id="acceptterms" required>
+            <label for="acceptterms">Accept Terms</label>
+        </div>
+
+        <div class="div-button">
+            <button type="reset" id ="reset">Clear</button>
+            <button type="submit" id ="submit">Submit</button>
+        </div>
+
+        
+
+
+
+
+
+        
+
+
+
+    </form>
+    
+</body>
+</html>
